@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezdu Project - Fury Oktria Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: #f8fafc;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .project-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 20px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #1e293b;
+        }
+        
+        .description {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: #10b981;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .metric {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .metric-value {
+            font-size: 24px;
+            font-weight: 800;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+        
+        .metric-label {
+            font-size: 12px;
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        .documents {
+            display: grid;
+            gap: 16px;
+        }
+        
+        .document-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .document-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            border-color: #10b981;
+        }
+        
+        .doc-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .doc-icon {
+            width: 40px;
+            height: 40px;
+            background: #d1fae5;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        .doc-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .doc-description {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .doc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #10b981;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .doc-link:hover {
+            background: #059669;
+            transform: translateY(-1px);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #10b981;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .back-link:hover {
+            color: #059669;
+        }
+        
+        .visual-preview {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .logo-display {
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin: 0 auto 16px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .description {
+                font-size: 16px;
+            }
+            
+            .metrics {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#portfolio" class="back-link">
+            ← Back to Portfolio
+        </a>
+        
+        <div class="header">
+            <div class="project-icon">🎓</div>
+            <h1>Ezdu Project</h1>
+            <p class="description">
+                Revolutionary EdTech platform connecting students with personalized learning experiences. 
+                AI-powered course recommendations, interactive content delivery, and comprehensive learning analytics.
+            </p>
+            <div class="tags">
+                <span class="tag">EdTech Platform</span>
+                <span class="tag">AI Learning</span>
+                <span class="tag">Student Analytics</span>
+            </div>
+        </div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div class="metric-value">50K+</div>
+                <div class="metric-label">Active Students</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">95%</div>
+                <div class="metric-label">Course Completion</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">4.9</div>
+                <div class="metric-label">User Rating</div>
+            </div>
+        </div>
+        
+        <div class="visual-preview">
+            <img src="ezdu_logo.png" alt="Ezdu Logo" class="logo-display">
+            <p style="color: #64748b; font-size: 14px;">Ezdu Brand Identity</p>
+        </div>
+        
+        <div class="documents">
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">📊</div>
+                    <div class="doc-title">Project Summary</div>
+                </div>
+                <div class="doc-description">
+                    Comprehensive project overview including market analysis, product strategy, and implementation roadmap.
+                </div>
+                <a href="Ezdu_Summary.pdf" class="doc-link" download>
+                    📥 Download Summary
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">🎨</div>
+                    <div class="doc-title">Brand Logo</div>
+                </div>
+                <div class="doc-description">
+                    Official Ezdu logo design in high-resolution PNG format for branding and marketing materials.
+                </div>
+                <a href="ezdu_logo.png" class="doc-link" download>
+                    📥 Download Logo
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">🖼️</div>
+                    <div class="doc-title">Additional Visual Assets</div>
+                </div>
+                <div class="doc-description">
+                    Supporting visual materials including UI mockups, infographics, and presentation graphics.
+                </div>
+                <a href="ezdu_additional attachment.png" class="doc-link" download>
+                    📥 Download Assets
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">📋</div>
+                    <div class="doc-title">Business Canvas</div>
+                </div>
+                <div class="doc-description">
+                    Complete business model canvas outlining value propositions, customer segments, and revenue streams.
+                </div>
+                <a href="Ezdu_Business canvas.pdf" class="doc-link" download>
+                    📥 Download Canvas
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

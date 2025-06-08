@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee Product Strategy - Fury Oktria Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: #f8fafc;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .project-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 20px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #1e293b;
+        }
+        
+        .description {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: #f97316;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .documents {
+            display: grid;
+            gap: 16px;
+        }
+        
+        .document-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .document-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            border-color: #f97316;
+        }
+        
+        .doc-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .doc-icon {
+            width: 40px;
+            height: 40px;
+            background: #fed7aa;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        .doc-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .doc-description {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .doc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #f97316;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .doc-link:hover {
+            background: #ea580c;
+            transform: translateY(-1px);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #f97316;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .back-link:hover {
+            color: #ea580c;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#portfolio" class="back-link">
+            ← Back to Portfolio
+        </a>
+        
+        <div class="header">
+            <div class="project-icon">🛒</div>
+            <h1>Shopee Product Strategy</h1>
+            <p class="description">
+                E-commerce platform optimization and feature enhancement strategy for Southeast Asia's leading marketplace.
+            </p>
+            <div class="tags">
+                <span class="tag">E-commerce</span>
+                <span class="tag">Feature Strategy</span>
+                <span class="tag">User Testing</span>
+            </div>
+        </div>
+        
+        <div class="documents">
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">📢</div>
+                    <div class="doc-title">Communication Material</div>
+                </div>
+                <div class="doc-description">
+                    Strategic communication materials and messaging framework for Shopee product launches and user engagement.
+                </div>
+                <a href="Communication Material_Fury Oktria Putra.pdf" class="doc-link" download>
+                    📥 Download Material
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">⚙️</div>
+                    <div class="doc-title">Feature Requirements</div>
+                </div>
+                <div class="doc-description">
+                    Comprehensive feature requirement documentation including user stories, acceptance criteria, and technical specifications.
+                </div>
+                <a href="Feature Requirement_Fury Oktria Putra.pdf" class="doc-link" download>
+                    📥 Download Requirements
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">🧪</div>
+                    <div class="doc-title">Testing Feature v2.0</div>
+                </div>
+                <div class="doc-description">
+                    Latest version of the feature testing documentation with updated test cases and validation criteria.
+                </div>
+                <a href="Testing Feature_Fury Oktria Putra v.2.0.pdf" class="doc-link" download>
+                    📥 Download v2.0
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">📝</div>
+                    <div class="doc-title">Testing Feature v1.0</div>
+                </div>
+                <div class="doc-description">
+                    Initial version of the feature testing framework with basic test scenarios and quality assurance protocols.
+                </div>
+                <a href="Testing Feature_Fury Oktria Putra v.1.0.pdf" class="doc-link" download>
+                    📥 Download v1.0
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
