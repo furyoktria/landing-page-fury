@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bareksa Product Strategy - Fury Oktria Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1e293b;
+            background: #f8fafc;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .project-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 20px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #1e293b;
+        }
+        
+        .description {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        
+        .tags {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .tag {
+            background: #667eea;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .documents {
+            display: grid;
+            gap: 16px;
+        }
+        
+        .document-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .document-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+        
+        .doc-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        
+        .doc-icon {
+            width: 40px;
+            height: 40px;
+            background: #f1f5f9;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+        
+        .doc-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        
+        .doc-description {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+        
+        .doc-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .doc-link:hover {
+            background: #5a67d8;
+            transform: translateY(-1px);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .back-link:hover {
+            color: #5a67d8;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 16px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html#portfolio" class="back-link">
+            ← Back to Portfolio
+        </a>
+        
+        <div class="header">
+            <div class="project-icon">📈</div>
+            <h1>Bareksa Product Strategy</h1>
+            <p class="description">
+                Comprehensive product ideation for Indonesia's leading mutual fund marketplace, 
+                focusing on user acquisition and investment simplification.
+            </p>
+            <div class="tags">
+                <span class="tag">Investment Platform</span>
+                <span class="tag">User Growth</span>
+                <span class="tag">Fintech</span>
+            </div>
+        </div>
+        
+        <div class="documents">
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">📋</div>
+                    <div class="doc-title">Project Overview Document</div>
+                </div>
+                <div class="doc-description">
+                    Comprehensive overview of the Bareksa Crypto project including objectives, scope, and strategic approach.
+                </div>
+                <a href="Document of Bareksa Project Crypto.docx" class="doc-link" download>
+                    📥 Download Document
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">📱</div>
+                    <div class="doc-title">Mobile App PRD - Phase 1</div>
+                </div>
+                <div class="doc-description">
+                    Product Requirements Document for Bareksa Crypto mobile application, detailing features, user flows, and technical specifications.
+                </div>
+                <a href="PRD - Bareksa Crypto - Mobile Apps - Phase 1.docx" class="doc-link" download>
+                    📥 Download PRD
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">🖥️</div>
+                    <div class="doc-title">Admin Dashboard PRD - Phase 1</div>
+                </div>
+                <div class="doc-description">
+                    Comprehensive PRD for the admin dashboard, including management features, analytics, and operational tools.
+                </div>
+                <a href="PRD - Bareksa Crypto - Admin Dashboard - Phase 1.docx" class="doc-link" download>
+                    📥 Download PRD
+                </a>
+            </div>
+            
+            <div class="document-card">
+                <div class="doc-header">
+                    <div class="doc-icon">🏗️</div>
+                    <div class="doc-title">Software Architecture</div>
+                </div>
+                <div class="doc-description">
+                    Technical architecture design for Bareksa Crypto platform, including system components and integration patterns.
+                </div>
+                <a href="Software Archictecture - Bareksa Crypto.docx" class="doc-link" download>
+                    📥 Download Architecture
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
